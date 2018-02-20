@@ -1,6 +1,6 @@
 
-class Matrix():
-    def __init__(self,x,y):
+class Matrix:
+    def __init__(self, x, y):
         self._x = x
         self._y = y
         self.matrix = []
@@ -12,7 +12,7 @@ class Matrix():
         return self._x
 
     @x.setter
-    def x(self,x_size):
+    def x(self, x_size):
         self._x = x_size
 
     @property
@@ -27,14 +27,14 @@ class Matrix():
     METHODS
     """
 
-    def createMatrix(self):
+    def create_matrix(self):
         self.matrix = [['+' for _ in range(self.x)]] * self.y
         return None
 
-    def fillMatrix(self):
+    def fill_matrix(self, ):
         pass
 
-    def printMatrix(self):
+    def print_matrix(self):
         for item in self.matrix:
             print (str(item) + "\n")
 
