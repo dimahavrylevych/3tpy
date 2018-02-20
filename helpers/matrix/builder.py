@@ -3,6 +3,7 @@ class Matrix():
     def __init__(self,x,y):
         self._x = x
         self._y = y
+        self.matrix = []
     """
     SETTERS AND GETTERS FOR PROPERTIES
     """
@@ -27,12 +28,14 @@ class Matrix():
     """
 
     def createMatrix(self):
-        pass
+        self.matrix = [['+' for _ in range(self.x)]] * self.y
+        return None
 
     def fillMatrix(self):
         pass
 
     def printMatrix(self):
-        pass
+        for item in self.matrix:
+            print (str(item) + "\n")
 
 
