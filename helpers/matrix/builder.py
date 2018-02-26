@@ -29,8 +29,9 @@ class Matrix:
 
     def create_matrix(self):
         self.matrix = [['+' for _ in range(self.x)]] * self.y
-        return None
+        return
 
+    None
     def fill_matrix(self, ):
         pass
 
